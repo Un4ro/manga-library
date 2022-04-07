@@ -1,0 +1,45 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.sidenav-trigger {
+    z-index: 999;
+}
+.page-link {
+    color: #212529;
+}
+.page-item.active .page-link {
+    background-color: #212529;
+    border: #212529;
+}
+
+@media (max-width: 1000px) {
+    .card-img {
+        height: 600px;
+    }
+    @media (max-width: 800px) { 
+        .card-img {
+            height: 700px;
+        }
+    }
+}
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+ }
+ .main-content{
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+ }
+ footer{
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+ }
